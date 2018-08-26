@@ -7,6 +7,22 @@ class Conta:
         self.__saldo = saldo
         self.__limite = limite
 
+    @property
+    def saldo(self):
+        return self.__saldo
+
+    @property
+    def limite(self):
+        return self.__limite
+
+    @property
+    def titular(self):
+        return self.__titular
+
+    @limite.setter
+    def limite(self, limite):
+        self.__limite = limite
+
     def extrato(self):
         print("O saldo é de {}".format(self.__saldo))
 
